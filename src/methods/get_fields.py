@@ -57,8 +57,11 @@ async def get_fields_handler(request):
     start_time = time.time()
     try:
         data = GetFieldsData(**await request.json())
-        return web.json_response(await get_fields_by_deal_id(data.amo_host, data.headers, data.lead_id),
-                                 status=200)
+        return web.json_response({
+
+            'status': True, 'answer': await get_fields_by_deal_id(data.amo_host, data.headers, data.lead_id),
+            'execution_time': round(time.time() - start_time, 2),
+        }, status=200)
 
     except Exception as e:
         return web.json_response(
