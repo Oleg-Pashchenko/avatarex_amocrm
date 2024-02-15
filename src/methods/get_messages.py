@@ -80,14 +80,12 @@ async def get_messages_handler(request):
     try:
         data = GetMessagesData(**await request.json())
         return web.json_response(
-            await get_unanswered_messages(
                 {
                     'status': True,
                     'answer': await get_unanswered_messages(data.amo_host, data.headers, data.pipeline_id,
                                                              data.stage_ids, data.amojo_hash, data.chat_token),
                     'execution_time': round(time.time() - start_time, 2)
-                }
-            ),
+                },
             status=200)
 
     except Exception as e:
