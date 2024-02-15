@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  database_mode:
+    restart: always
+    build:
+      context: .
+    ports:
+      - "5555:5555"
