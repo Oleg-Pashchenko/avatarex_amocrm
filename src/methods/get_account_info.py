@@ -52,7 +52,7 @@ async def get_account_info_handler(request):
 
         return web.json_response({
             'status': True,
-            'message': {
+            'answer': {
                 'pipelines': get_pipelines_info(data.amo_host, data.headers),
                 'fields': get_custom_fields(data.amo_host, data.headers)
             },
@@ -61,5 +61,5 @@ async def get_account_info_handler(request):
 
     except Exception as e:
         return web.json_response(
-            {'status': False, 'message': f'{e}', 'execution_time': round(time.time() - start_time, 2)},
+            {'status': False, 'answer': f'{e}', 'execution_time': round(time.time() - start_time, 2)},
             status=400)

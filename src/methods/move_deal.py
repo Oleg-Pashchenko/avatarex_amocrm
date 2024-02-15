@@ -41,13 +41,13 @@ async def move_deal_handler(request):
             status_to_set_id=validated_data.status_id_to_set)
         return web.json_response({
             'status': True,
-            'message': "Сделка успешно перенесена!",
+            'answer': "Сделка успешно перенесена!",
             'execution_time': round(time.time() - start_time, 2)
         })
 
     except (ValidationError, ConnectionError, Exception, AmocrmMoveError) as e:
         return web.json_response({
             'status': False,
-            'message': f'{type(e).__name__}: {e}',
+            'answer': f'{type(e).__name__}: {e}',
             'execution_time': round(time.time() - start_time, 2)
         })

@@ -28,7 +28,7 @@ async def create_tokens_handler(request):
             raise AuthError("Некорректные данные для входа!")
 
         return web.json_response({
-            'status': True, 'message': {
+            'status': True, 'answer': {
                 'headers': headers,
                 'access_token': acc_token,
                 'refresh_token': refr_token,
@@ -39,12 +39,12 @@ async def create_tokens_handler(request):
         })
     except AuthError as e:
         return web.json_response(
-            {'status': False, 'message': f'{e}', 'execution_time': round(time.time() - start_time, 2)},
+            {'status': False, 'answer': f'{e}', 'execution_time': round(time.time() - start_time, 2)},
             status=403)
 
     except Exception as e:
         return web.json_response(
-            {'status': False, 'message': f'{e}', 'execution_time': round(time.time() - start_time, 2)},
+            {'status': False, 'answer': f'{e}', 'execution_time': round(time.time() - start_time, 2)},
             status=400)
 
 

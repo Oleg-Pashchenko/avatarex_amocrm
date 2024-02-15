@@ -50,7 +50,7 @@ async def get_unanswered_messages(host: str, headers: dict, pipeline_id: int, st
                         {
                             'id': messages_history["message_list"][0]['id'],
                             'chat_id': chat_id,
-                            'message': message,
+                            'answer': message,
                             'pipeline_id': pipeline_id,
                             'lead_id': lead_id,
                             'status_id': status_id,
@@ -83,7 +83,7 @@ async def get_messages_handler(request):
             await get_unanswered_messages(
                 {
                     'status': True,
-                    'message': await get_unanswered_messages(data.amo_host, data.headers, data.pipeline_id,
+                    'answer': await get_unanswered_messages(data.amo_host, data.headers, data.pipeline_id,
                                                              data.stage_ids, data.amojo_hash, data.chat_token),
                     'execution_time': round(time.time() - start_time, 2)
                 }
@@ -92,6 +92,6 @@ async def get_messages_handler(request):
 
     except Exception as e:
         return web.json_response(
-            {'status': False, 'message': f"{e}", 'execution_time': round(time.time() - start_time, 2),
+            {'status': False, 'answer': f"{e}", 'execution_time': round(time.time() - start_time, 2),
              }, status=400
         )

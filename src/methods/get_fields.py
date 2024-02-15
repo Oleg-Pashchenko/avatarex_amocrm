@@ -62,6 +62,6 @@ async def get_fields_handler(request):
 
     except Exception as e:
         return web.json_response(
-            {'status': False, 'message': f"{e}", 'execution_time': round(time.time() - start_time, 2),
+            {'status': False, 'answer': f"{e}", 'execution_time': round(time.time() - start_time, 2),
              }, status=400
         )

@@ -29,12 +29,12 @@ async def send_message_handler(request):
         data = SendMessageData(**await request.json())
         return web.json_response({
             'status': True,
-            'message': await send_message(data.amo_host, data.amojo_hash, data.chat_token, data.message, data.chat_id),
+            'answer': await send_message(data.amo_host, data.amojo_hash, data.chat_token, data.message, data.chat_id),
             'execution_time': round(time.time() - start_time, 2)},
             status=200)
 
     except Exception as e:
         return web.json_response(
-            {'status': False, 'message': f"{e}", 'execution_time': round(time.time() - start_time, 2),
+            {'status': False, 'answer': f"{e}", 'execution_time': round(time.time() - start_time, 2),
              }, status=400
         )

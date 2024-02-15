@@ -40,10 +40,10 @@ async def fill_fields_handler(request):
             host=data.host,
             headers=data.headers
         )
-        return web.json_response({'status': True, 'message': response,
+        return web.json_response({'status': True, 'answer': response,
                                   'execution_time': round(time.time() - start_time, 2)}, status=200)
 
     except Exception as e:
         return web.json_response(
-            {'status': False, 'message': f'{e}', 'execution_time': round(time.time() - start_time, 2)},
+            {'status': False, 'answer': f'{e}', 'execution_time': round(time.time() - start_time, 2)},
             status=400)
