@@ -7,4 +7,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY .. /app
 
 
-CMD ["python", "-u", "server.py"]
+CMD ["python", "-u", "app.py"]
