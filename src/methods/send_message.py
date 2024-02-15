@@ -1,3 +1,4 @@
+import asyncio
 import json
 import time
 
@@ -12,6 +13,8 @@ async def send_message(host, hash, chat_token, message, chat_id):
     url = f"{amojo_host}v1/chats/{hash}/{chat_id}/messages?with_video=true&stand=v16"
     async with aiohttp.ClientSession() as session:
         response = await session.post(url=url, data=json.dumps({"text": message}), headers=headers)
+        print(response.status)
+
         return (await response.json())['id']
 
 
@@ -20,7 +23,7 @@ class SendMessageData(BaseModel):
     amojo_hash: str
     chat_token: str
     message: str
-    chat_id: int
+    chat_id: str
 
 
 async def send_message_handler(request):
