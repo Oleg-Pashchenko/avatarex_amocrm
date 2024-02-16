@@ -1,3 +1,4 @@
+import asyncio
 import time
 
 import aiohttp
@@ -14,7 +15,7 @@ async def move_deal(host, headers, deal_id: int, pipeline_to_set_id: int, status
         response = await session.post(url=f'{host}ajax/leads/detail/',
                                       headers=headers,
                                       data={
-                                          'id': deal_id,
+                                          'ID': deal_id,
                                           'lead[STATUS]': status_to_set_id,
                                           'lead[PIPELINE_ID]': pipeline_to_set_id
                                       })
@@ -39,7 +40,8 @@ async def move_deal_handler(request):
         await move_deal(
             deal_id=validated_data.deal_id,
             pipeline_to_set_id=validated_data.pipeline_id_to_set,
-            status_to_set_id=validated_data.status_id_to_set)
+            status_to_set_id=validated_data.status_id_to_set, host=validated_data.amo_host,
+            headers=validated_data.headers)
         return web.json_response({
             'status': True,
             'answer': "Сделка успешно перенесена!",
