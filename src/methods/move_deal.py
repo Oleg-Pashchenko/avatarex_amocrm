@@ -34,6 +34,7 @@ async def move_deal_handler(request):
     start_time = time.time()
     try:
         data = await request.json()
+        print(data)
         validated_data = MoveDealData(**data)
         await move_deal(
             deal_id=validated_data.deal_id,
