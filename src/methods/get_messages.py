@@ -31,6 +31,9 @@ async def get_unanswered_messages(host: str, headers: dict, pipeline_id: int, st
             await asyncio.sleep(1)
 
             for t in talks["_embedded"]["talks"]:
+                if 'Salesbot' in t['last_message']['author']:
+                    continue
+
                 if int(time.time()) - t['last_message']['last_message_at'] > 60 * 60 * 24:
                     continue
 
@@ -93,4 +96,3 @@ async def get_messages_handler(request):
             {'status': False, 'answer': f"{e}", 'execution_time': round(time.time() - start_time, 2),
              }, status=400
         )
-
