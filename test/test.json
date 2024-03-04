@@ -2,51 +2,51 @@
     "_page": 1,
     "filter": {
         "presets": {
-            "79612058": {
-                "id": 79612058,
+            "93732318": {
+                "id": 93732318,
                 "name": "Открытые беседы",
                 "query": "status[]=opened",
-                "link": "/imbox/?status[]=opened&sel=79612058&preset=y",
+                "link": "/imbox/?status[]=opened&sel=93732318&preset=y",
                 "sort": 1,
                 "system_type": 26,
                 "bookmark": false,
                 "can_edit": true
             },
-            "79612062": {
-                "id": 79612062,
+            "93732322": {
+                "id": 93732322,
                 "name": "Требует ответа",
                 "query": "is_read[]=false&status[]=opened",
-                "link": "/imbox/?is_read[]=false&status[]=opened&sel=79612062&preset=y",
+                "link": "/imbox/?is_read[]=false&status[]=opened&sel=93732322&preset=y",
                 "sort": 2,
                 "system_type": 27,
                 "bookmark": false,
                 "can_edit": true
             },
-            "79612066": {
-                "id": 79612066,
+            "93732326": {
+                "id": 93732326,
                 "name": "Где я ответственный",
-                "query": "responsible=8914706&status[]=opened",
-                "link": "/imbox/?responsible=8914706&status[]=opened&sel=79612066&preset=y",
+                "query": "responsible=10372898&status[]=opened",
+                "link": "/imbox/?responsible=10372898&status[]=opened&sel=93732326&preset=y",
                 "sort": 3,
                 "system_type": 28,
                 "bookmark": false,
                 "can_edit": true
             },
-            "79612070": {
-                "id": 79612070,
+            "93732330": {
+                "id": 93732330,
                 "name": "Где я подписан",
-                "query": "subscribed_user=8914706&subscribed_group=0&status[]=opened",
-                "link": "/imbox/?subscribed_user=8914706&subscribed_group=0&status[]=opened&sel=79612070&preset=y",
+                "query": "subscribed_user=10372898&subscribed_group=0&status[]=opened",
+                "link": "/imbox/?subscribed_user=10372898&subscribed_group=0&status[]=opened&sel=93732330&preset=y",
                 "sort": 4,
                 "system_type": 29,
                 "bookmark": false,
                 "can_edit": true
             },
-            "79612074": {
-                "id": 79612074,
+            "93732334": {
+                "id": 93732334,
                 "name": "Избранные",
                 "query": "status[]=opened&is_starred[]=1",
-                "link": "/imbox/?status[]=opened&is_starred[]=1&sel=79612074&preset=y",
+                "link": "/imbox/?status[]=opened&is_starred[]=1&sel=93732334&preset=y",
                 "sort": 5,
                 "system_type": 30,
                 "bookmark": false,
@@ -56,1973 +56,172 @@
     },
     "_links": {
         "self": {
-            "href": "https://t89333024999.amocrm.ru/ajax/v4/inbox/list?limit=50&order%5Bsort_by%5D=last_message_at&order%5Bsort_type%5D=desc&page=1"
+            "href": "https://ckuralmarket.amocrm.ru/ajax/v4/inbox/list?limit=50&order%5Bsort_by%5D=last_message_at&order%5Bsort_type%5D=desc&filter%5Bstatus%5D%5B0%5D=opened&page=1"
         },
         "next": {
-            "href": "https://t89333024999.amocrm.ru/ajax/v4/inbox/list?limit=50&order%5Bsort_by%5D=last_message_at&order%5Bsort_type%5D=desc&page=2&page_token=eyJzdGMiOjAsIndsdGMiOjE0LCJ0byI6NTAsInBmbGQiOiIxNzA5MDI0NTA5Ljc0NjAwMCIsInNmbGQiOm51bGx9"
+            "href": "https://ckuralmarket.amocrm.ru/ajax/v4/inbox/list?limit=50&order%5Bsort_by%5D=last_message_at&order%5Bsort_type%5D=desc&filter%5Bstatus%5D%5B0%5D=opened&page=2&page_token=eyJzdGMiOjAsIndsdGMiOjIsInRvIjo1MCwicGZsZCI6IjE3MDkwOTgyNjcuMjAwMDAwIiwic2ZsZCI6bnVsbH0."
         }
     },
     "_embedded": {
         "talks": [
             {
-                "id": 4506,
+                "id": 826,
                 "entity": {
                     "type": "leads",
-                    "id": 18526795,
+                    "id": 15027586,
                     "title": "",
                     "main_user_id": 0,
-                    "status_id": 64306102,
-                    "pipeline_id": 7806422
+                    "status_id": 62377486,
+                    "pipeline_id": 7525354
                 },
-                "created_at": 1709103209,
-                "updated_at": 1709103211,
-                "is_read": false,
-                "status": "opened",
-                "last_message": {
-                    "text": "🖼 Приветствую вас!\n\nМеня зовут Тага, я AI ассистент владельца «Дома тайга, и специализируюсь на помощи в строи...",
-                    "id": 0,
-                    "author": "Salesbot",
-                    "last_message_at": 1709103210,
-                    "last_message_at_msec": 1709103210.492,
-                    "profile_avatar": "/frontend/images/interface/inbox/mesage_bot_avatar.png"
-                },
-                "chat_source": "telegram",
-                "contact_id": null,
-                "chat_id": "bbbaad21-6a7c-45b8-867e-2df9bc348567",
-                "found_message": [],
-                "is_starred": false,
-                "first_unanswered_message_at": 1709103209,
-                "first_unanswered_message_at_msec": 1709103209,
-                "type": "incoming",
-                "source_id": 23490649,
-                "closed_at": null,
-                "highlights": [],
-                "reactions": null,
-                "last_reaction": null
-            },
-            {
-                "id": 1563,
-                "entity": {
-                    "type": "leads",
-                    "id": 12443407,
-                    "title": "Заявка: Новый квиз опрос",
-                    "main_user_id": 8914706,
-                    "tags": [
-                        {
-                            "id": 137127,
-                            "name": "Квиз",
-                            "color": null
-                        }
-                    ],
-                    "status_id": 53057606,
-                    "pipeline_id": 6133686
-                },
-                "created_at": 1690866345,
-                "updated_at": 1709103020,
-                "is_read": false,
-                "status": "opened",
-                "last_message": {
-                    "text": "И так же просил 4й вариант из 3х модулей 3*6",
-                    "id": null,
-                    "author": "Артем",
-                    "last_message_at": 1709103018,
-                    "last_message_at_msec": 1709103018.963,
-                    "profile_avatar": "https://amojo.amocrm.ru/attachments/profiles/f4aabd51-e7be-443b-9ca7-98e90db49187/LJZCSXUFbF_128x128.jpg"
-                },
-                "chat_source": "com.wazzup24-1",
-                "contact_id": 15604657,
-                "chat_id": "2c2026de-21d2-431c-9d47-72e7c835ee97",
-                "found_message": [],
-                "is_starred": false,
-                "first_unanswered_message_at": 1709101948,
-                "first_unanswered_message_at_msec": 1709101948,
-                "type": "outgoing_received_reply",
-                "source_id": 20253714,
-                "closed_at": null,
-                "highlights": [],
-                "reactions": null,
-                "last_reaction": null
-            },
-            {
-                "id": 1136,
-                "entity": {
-                    "type": "leads",
-                    "id": 11723953,
-                    "title": "Заявка: Новый квиз опрос",
-                    "main_user_id": 8914706,
-                    "tags": [
-                        {
-                            "id": 137127,
-                            "name": "Квиз",
-                            "color": null
-                        }
-                    ],
-                    "status_id": 53057610,
-                    "pipeline_id": 6133686
-                },
-                "created_at": 1688975644,
-                "updated_at": 1709102426,
+                "created_at": 1709110619,
+                "updated_at": 1709110650,
                 "is_read": true,
                 "status": "opened",
                 "last_message": {
-                    "text": "📄 Каштан 1.1.4.pdf",
-                    "id": 9821606,
-                    "author": "Евгений",
-                    "last_message_at": 1709102425,
-                    "last_message_at_msec": 1709102425.578,
-                    "profile_avatar": "https://t89333024999.amocrm.ru/frontend/images/interface/avatars/7.jpeg"
+                    "text": "hi",
+                    "id": 10372898,
+                    "author": "Alex",
+                    "last_message_at": 1709110649,
+                    "last_message_at_msec": 1709110649.803,
+                    "profile_avatar": "https://ckuralmarket.amocrm.ru/frontend/images/interface/avatars/9.jpeg"
                 },
                 "chat_source": "amo.ext.6247798",
                 "contact_id": null,
-                "chat_id": "0f1fadcb-0e4a-4ab5-9fd7-1428cd00da1f",
-                "found_message": [],
-                "is_starred": false,
-                "first_unanswered_message_at": null,
-                "first_unanswered_message_at_msec": null,
-                "type": "outgoing_received_reply",
-                "source_id": 19891286,
-                "closed_at": null,
-                "highlights": [],
-                "reactions": null,
-                "last_reaction": null
-            },
-            {
-                "id": 4503,
-                "entity": {
-                    "type": "leads",
-                    "id": 18526343,
-                    "title": "Сделка 79136555790",
-                    "main_user_id": 9821606,
-                    "status_id": 53057602,
-                    "pipeline_id": 6133686
-                },
-                "created_at": 1709101944,
-                "updated_at": 1709102330,
-                "is_read": true,
-                "status": "opened",
-                "last_message": {
-                    "text": "Добрый день! Да, просчитаем",
-                    "id": 9821606,
-                    "author": "Евгений",
-                    "last_message_at": 1709102329,
-                    "last_message_at_msec": 1709102329.647,
-                    "profile_avatar": "https://t89333024999.amocrm.ru/frontend/images/interface/avatars/7.jpeg"
-                },
-                "chat_source": "amo.ext.6247798",
-                "contact_id": null,
-                "chat_id": "5c1c6977-9a7e-4e3a-a72d-7f42fe0db635",
+                "chat_id": "60a3e16e-45d2-423d-a597-680961ec2e2b",
                 "found_message": [],
                 "is_starred": false,
                 "first_unanswered_message_at": null,
                 "first_unanswered_message_at_msec": null,
                 "type": "incoming",
-                "source_id": 19891286,
+                "source_id": 23607034,
                 "closed_at": null,
                 "highlights": [],
                 "reactions": null,
                 "last_reaction": null
             },
             {
-                "id": 4504,
+                "id": 825,
                 "entity": {
                     "type": "leads",
-                    "id": 18526471,
-                    "title": "Заявка: Новый квиз опрос",
-                    "main_user_id": 8914706,
-                    "tags": [
-                        {
-                            "id": 137127,
-                            "name": "Квиз",
-                            "color": null
-                        }
-                    ],
-                    "status_id": 53057598,
-                    "pipeline_id": 6133686
-                },
-                "created_at": 1709102195,
-                "updated_at": 1709102196,
-                "is_read": true,
-                "status": "opened",
-                "last_message": {
-                    "text": "Добрый день, Владимир.Приступаем к расчёту вашего дома. \n\nВажный момент: вы планируете жить в доме зимой, или ...",
-                    "id": 0,
-                    "author": "Salesbot",
-                    "last_message_at": 1709102195,
-                    "last_message_at_msec": 1709102195.342,
-                    "profile_avatar": "/frontend/images/interface/inbox/mesage_bot_avatar.png"
-                },
-                "chat_source": "amo.ext.6247798",
-                "contact_id": null,
-                "chat_id": "d947d064-1f2b-4fd5-b341-9ea12ff7d736",
-                "found_message": [],
-                "is_starred": false,
-                "first_unanswered_message_at": null,
-                "first_unanswered_message_at_msec": null,
-                "type": "outgoing_pending_reply",
-                "source_id": null,
-                "closed_at": null,
-                "highlights": [],
-                "reactions": null,
-                "last_reaction": null
-            },
-            {
-                "id": 4310,
-                "entity": {
-                    "type": "leads",
-                    "id": 18346783,
-                    "title": "",
-                    "main_user_id": 9821606,
-                    "status_id": 53057606,
-                    "pipeline_id": 6133686
-                },
-                "created_at": 1708346981,
-                "updated_at": 1709102195,
-                "is_read": false,
-                "status": "opened",
-                "last_message": {
-                    "text": "QuizGoBot @QuizGoBot\nЗаявка: Новый квиз опрос\n\nСтатус: Новая \nДата создания: 28 февраля 2024 в 09:36 \n\nКонтакт...",
-                    "id": null,
-                    "author": "Заявки квиз Тайга",
-                    "last_message_at": 1709102194,
-                    "last_message_at_msec": 1709102194.801,
-                    "profile_avatar": "/frontend/images/interface/avatars/4.jpeg"
-                },
-                "chat_source": "com.wazzup24-1",
-                "contact_id": 16421483,
-                "chat_id": "ade50390-aee0-4f6f-a7df-3691ddcca3fe",
-                "found_message": [],
-                "is_starred": false,
-                "first_unanswered_message_at": 1708518515,
-                "first_unanswered_message_at_msec": 1708518515,
-                "type": "incoming",
-                "source_id": 20253714,
-                "closed_at": null,
-                "highlights": [],
-                "reactions": null,
-                "last_reaction": null
-            },
-            {
-                "id": 4502,
-                "entity": {
-                    "type": "leads",
-                    "id": 18526329,
-                    "title": "Торговый павильон",
-                    "main_user_id": 0,
-                    "status_id": 53057598,
-                    "pipeline_id": 6133686
-                },
-                "created_at": 1709101817,
-                "updated_at": 1709101927,
-                "is_read": true,
-                "status": "opened",
-                "last_message": {
-                    "text": "Добрый день!",
-                    "id": 9821606,
-                    "author": "Евгений",
-                    "last_message_at": 1709101926,
-                    "last_message_at_msec": 1709101926.325,
-                    "profile_avatar": "https://t89333024999.amocrm.ru/frontend/images/interface/avatars/7.jpeg"
-                },
-                "chat_source": "avito",
-                "contact_id": null,
-                "chat_id": "15dcaa16-c3fc-47fe-b00d-d6720c9046cb",
-                "found_message": [],
-                "is_starred": false,
-                "first_unanswered_message_at": null,
-                "first_unanswered_message_at_msec": null,
-                "type": "incoming",
-                "source_id": 23490028,
-                "closed_at": null,
-                "highlights": [],
-                "reactions": null,
-                "last_reaction": null
-            },
-            {
-                "id": 4412,
-                "entity": {
-                    "type": "leads",
-                    "id": 18452509,
-                    "title": "Заявка: Вагончики",
-                    "main_user_id": 10515842,
-                    "tags": [
-                        {
-                            "id": 137127,
-                            "name": "Квиз",
-                            "color": null
-                        },
-                        {
-                            "id": 159389,
-                            "name": "Бытовка",
-                            "color": null
-                        },
-                        {
-                            "id": 165849,
-                            "name": "yandex_ads",
-                            "color": null
-                        }
-                    ],
-                    "status_id": 53057606,
-                    "pipeline_id": 6133686
-                },
-                "created_at": 1708779592,
-                "updated_at": 1709101589,
-                "is_read": false,
-                "status": "opened",
-                "last_message": {
-                    "text": "Добрый, да, конечно. Постараемся к пяти приехать",
-                    "id": null,
-                    "author": "Максим",
-                    "last_message_at": 1709101586,
-                    "last_message_at_msec": 1709101586.8928,
-                    "profile_avatar": "https://amojo.amocrm.ru/attachments/profiles/796daf68-201a-4b17-9ea6-241589cb3761/64793323-370574233613602-7769192420775821312-n_128x128.jpg"
-                },
-                "chat_source": "amo.ext.6247798",
-                "contact_id": 21045787,
-                "chat_id": "09ebd98a-cd79-4254-ad63-23a422df39c9",
-                "found_message": [],
-                "is_starred": false,
-                "first_unanswered_message_at": 1709101586,
-                "first_unanswered_message_at_msec": 1709101586,
-                "type": "incoming",
-                "source_id": 19891286,
-                "closed_at": null,
-                "highlights": [],
-                "reactions": null,
-                "last_reaction": null
-            },
-            {
-                "id": 2842,
-                "entity": {
-                    "type": "leads",
-                    "id": 14817241,
-                    "title": ", Tilda",
-                    "main_user_id": 8914706,
-                    "tags": [
-                        {
-                            "id": 137583,
-                            "name": "tilda",
-                            "color": null
-                        }
-                    ],
-                    "status_id": 57450258,
-                    "pipeline_id": 6133686
-                },
-                "created_at": 1696832528,
-                "updated_at": 1709101061,
-                "is_read": true,
-                "status": "opened",
-                "last_message": {
-                    "text": "с учетом плитки и стяжки будет 120 см",
-                    "id": 9821606,
-                    "author": "Евгений",
-                    "last_message_at": 1709101060,
-                    "last_message_at_msec": 1709101060.452,
-                    "profile_avatar": "https://t89333024999.amocrm.ru/frontend/images/interface/avatars/7.jpeg"
-                },
-                "chat_source": "amo.ext.6247798",
-                "contact_id": null,
-                "chat_id": "b6f83854-adb1-4060-a7ad-2f6ae170c314",
-                "found_message": [],
-                "is_starred": false,
-                "first_unanswered_message_at": null,
-                "first_unanswered_message_at_msec": null,
-                "type": "outgoing_received_reply",
-                "source_id": null,
-                "closed_at": null,
-                "highlights": [],
-                "reactions": null,
-                "last_reaction": null
-            },
-            {
-                "id": 4469,
-                "entity": {
-                    "type": "leads",
-                    "id": 18504061,
-                    "title": "Модульный дом",
-                    "main_user_id": 10515842,
-                    "status_id": 143,
-                    "pipeline_id": 6133686
-                },
-                "created_at": 1709007351,
-                "updated_at": 1709100834,
-                "is_read": true,
-                "status": "opened",
-                "last_message": {
-                    "text": "Добрый день,   ! Видим, что вы не ответили на наше сообщение. На всякий случай уточняю - вам нас кто-то пореко...",
-                    "id": 8914706,
-                    "author": "Станислав",
-                    "last_message_at": 1709100833,
-                    "last_message_at_msec": 1709100833.574,
-                    "profile_avatar": "https://t89333024999.amocrm.ru/frontend/images/interface/avatars/7.jpeg"
-                },
-                "chat_source": "avito",
-                "contact_id": null,
-                "chat_id": "95465f51-8e3d-4460-b204-9cfad16271b3",
-                "found_message": [],
-                "is_starred": false,
-                "first_unanswered_message_at": null,
-                "first_unanswered_message_at_msec": null,
-                "type": "incoming",
-                "source_id": 23490028,
-                "closed_at": null,
-                "highlights": [],
-                "reactions": null,
-                "last_reaction": null
-            },
-            {
-                "id": 4501,
-                "entity": {
-                    "type": "leads",
-                    "id": 18525861,
-                    "title": "Заявка: Новый квиз опрос",
-                    "main_user_id": 10515842,
-                    "tags": [
-                        {
-                            "id": 137127,
-                            "name": "Квиз",
-                            "color": null
-                        }
-                    ],
-                    "status_id": 53057606,
-                    "pipeline_id": 6133686
-                },
-                "created_at": 1709100473,
-                "updated_at": 1709100648,
-                "is_read": true,
-                "status": "opened",
-                "last_message": {
-                    "text": "Здравствуйте, вы обратились в компанию DOMA TAIGA вашим вопросом занимается Савелий    ",
-                    "id": 0,
-                    "author": "Salesbot",
-                    "last_message_at": 1709100647,
-                    "last_message_at_msec": 1709100647.485,
-                    "profile_avatar": "/frontend/images/interface/inbox/mesage_bot_avatar.png"
-                },
-                "chat_source": "amo.ext.6247798",
-                "contact_id": null,
-                "chat_id": "7f43cfcf-9be6-48ce-afda-c9819d350a75",
-                "found_message": [],
-                "is_starred": false,
-                "first_unanswered_message_at": null,
-                "first_unanswered_message_at_msec": null,
-                "type": "outgoing_pending_reply",
-                "source_id": null,
-                "closed_at": null,
-                "highlights": [],
-                "reactions": null,
-                "last_reaction": null
-            },
-            {
-                "id": 4291,
-                "entity": {
-                    "type": "leads",
-                    "id": 18325395,
-                    "title": "Модульный дом",
-                    "main_user_id": 10515842,
-                    "status_id": 143,
-                    "pipeline_id": 6133686
-                },
-                "created_at": 1708239265,
-                "updated_at": 1709100437,
-                "is_read": true,
-                "status": "opened",
-                "last_message": {
-                    "text": "Добрый день,   ! Видим, что вы не ответили на наше сообщение. На всякий случай уточняю - вам нас кто-то пореко...",
-                    "id": 8914706,
-                    "author": "Станислав",
-                    "last_message_at": 1709100435,
-                    "last_message_at_msec": 1709100435.919,
-                    "profile_avatar": "https://t89333024999.amocrm.ru/frontend/images/interface/avatars/7.jpeg"
-                },
-                "chat_source": "avito",
-                "contact_id": null,
-                "chat_id": "1ca32f80-73a9-496a-94a1-729a8898e4ec",
-                "found_message": [],
-                "is_starred": false,
-                "first_unanswered_message_at": null,
-                "first_unanswered_message_at_msec": null,
-                "type": "incoming",
-                "source_id": 23490028,
-                "closed_at": null,
-                "highlights": [],
-                "reactions": null,
-                "last_reaction": null
-            },
-            {
-                "id": 4470,
-                "entity": {
-                    "type": "leads",
-                    "id": 18425013,
-                    "title": "Заявка: Новый квиз опрос",
-                    "main_user_id": 3265900,
-                    "tags": [
-                        {
-                            "id": 137127,
-                            "name": "Квиз",
-                            "color": null
-                        }
-                    ],
-                    "status_id": 53057610,
-                    "pipeline_id": 6133686
-                },
-                "created_at": 1709007835,
-                "updated_at": 1709100306,
-                "is_read": true,
-                "status": "opened",
-                "last_message": {
-                    "text": "Игорь, здравствуйте. Посмотрели коммерческое предложение?",
-                    "id": 3265900,
-                    "author": "Иван",
-                    "last_message_at": 1709100305,
-                    "last_message_at_msec": 1709100305.302,
-                    "profile_avatar": "https://t89333024999.amocrm.ru/frontend/images/interface/avatars/1.jpeg"
-                },
-                "chat_source": "amo.ext.6247798",
-                "contact_id": null,
-                "chat_id": "a2b7c76c-a9cb-4649-8bba-7901b647a4ba",
-                "found_message": [],
-                "is_starred": false,
-                "first_unanswered_message_at": null,
-                "first_unanswered_message_at_msec": null,
-                "type": "outgoing_pending_reply",
-                "source_id": 19891286,
-                "closed_at": null,
-                "highlights": [],
-                "reactions": null,
-                "last_reaction": null
-            },
-            {
-                "id": 531,
-                "entity": {
-                    "type": "leads",
-                    "id": 10365507,
-                    "title": "Заявка: Новый квиз опрос",
-                    "main_user_id": 8914706,
-                    "tags": [
-                        {
-                            "id": 137127,
-                            "name": "Квиз",
-                            "color": null
-                        },
-                        {
-                            "id": 165849,
-                            "name": "yandex_ads",
-                            "color": null
-                        }
-                    ],
-                    "status_id": 53057610,
-                    "pipeline_id": 6133686
-                },
-                "created_at": 1685339950,
-                "updated_at": 1709100236,
-                "is_read": true,
-                "status": "opened",
-                "last_message": {
-                    "text": "Добрый день!",
-                    "id": 3265900,
-                    "author": "Иван",
-                    "last_message_at": 1709100235,
-                    "last_message_at_msec": 1709100235.618,
-                    "profile_avatar": "https://t89333024999.amocrm.ru/frontend/images/interface/avatars/1.jpeg"
-                },
-                "chat_source": "amo.ext.6247798",
-                "contact_id": null,
-                "chat_id": "a1ee7f7d-9b2c-4abd-b1bf-ff5de1b72681",
-                "found_message": [],
-                "is_starred": false,
-                "first_unanswered_message_at": null,
-                "first_unanswered_message_at_msec": null,
-                "type": "outgoing_received_reply",
-                "source_id": 19891286,
-                "closed_at": null,
-                "highlights": [],
-                "reactions": null,
-                "last_reaction": null
-            },
-            {
-                "id": 4500,
-                "entity": {
-                    "type": "leads",
-                    "id": 18524357,
-                    "title": "Модульный дом",
-                    "main_user_id": 10515842,
-                    "status_id": 53057606,
-                    "pipeline_id": 6133686
-                },
-                "created_at": 1709098369,
-                "updated_at": 1709098369,
-                "is_read": true,
-                "status": "opened",
-                "last_message": {
-                    "text": "Здравствуйте, все проекты можно посмотреть у нас на сайте: дома-тайга.рф",
-                    "id": 8914706,
-                    "author": "Станислав",
-                    "last_message_at": 1709098368,
-                    "last_message_at_msec": 1709098368.246,
-                    "profile_avatar": "https://t89333024999.amocrm.ru/frontend/images/interface/avatars/7.jpeg"
-                },
-                "chat_source": "amo.ext.6247798",
-                "contact_id": null,
-                "chat_id": "b99f5025-446d-4bdc-8efc-0155c0b4ef94",
-                "found_message": [],
-                "is_starred": false,
-                "first_unanswered_message_at": null,
-                "first_unanswered_message_at_msec": null,
-                "type": "outgoing_pending_reply",
-                "source_id": 19891286,
-                "closed_at": null,
-                "highlights": [],
-                "reactions": null,
-                "last_reaction": null
-            },
-            {
-                "id": 4499,
-                "entity": {
-                    "type": "leads",
-                    "id": 18524357,
-                    "title": "Модульный дом",
-                    "main_user_id": 10515842,
-                    "status_id": 53057606,
-                    "pipeline_id": 6133686
-                },
-                "created_at": 1709098218,
-                "updated_at": 1709098218,
-                "is_read": true,
-                "status": "opened",
-                "last_message": {
-                    "text": "Здравствуйте, вы обратились в компанию DOMA TAIGA вашим вопросом занимается Станислав    ",
-                    "id": 0,
-                    "author": "Salesbot",
-                    "last_message_at": 1709098217,
-                    "last_message_at_msec": 1709098217.465,
-                    "profile_avatar": "/frontend/images/interface/inbox/mesage_bot_avatar.png"
-                },
-                "chat_source": "amo.ext.6247798",
-                "contact_id": null,
-                "chat_id": "8097b2a4-5fad-47f9-8cdf-3e56adc1eb95",
-                "found_message": [],
-                "is_starred": false,
-                "first_unanswered_message_at": null,
-                "first_unanswered_message_at_msec": null,
-                "type": "outgoing_pending_reply",
-                "source_id": null,
-                "closed_at": null,
-                "highlights": [],
-                "reactions": null,
-                "last_reaction": null
-            },
-            {
-                "id": 4498,
-                "entity": {
-                    "type": "leads",
-                    "id": 18524357,
-                    "title": "Модульный дом",
-                    "main_user_id": 10515842,
-                    "status_id": 53057606,
-                    "pipeline_id": 6133686
-                },
-                "created_at": 1709093786,
-                "updated_at": 1709098218,
-                "is_read": true,
-                "status": "opened",
-                "last_message": {
-                    "text": "Здравствуйте, вы обратились в компанию DOMA TAIGA вашим вопросом занимается Станислав    ",
-                    "id": 0,
-                    "author": "Salesbot",
-                    "last_message_at": 1709098217,
-                    "last_message_at_msec": 1709098217.304,
-                    "profile_avatar": "/frontend/images/interface/inbox/mesage_bot_avatar.png"
-                },
-                "chat_source": "avito",
-                "contact_id": null,
-                "chat_id": "c2681ecf-8b42-40af-9cb2-ec442486b9ee",
-                "found_message": [],
-                "is_starred": false,
-                "first_unanswered_message_at": null,
-                "first_unanswered_message_at_msec": null,
-                "type": "incoming",
-                "source_id": 23490028,
-                "closed_at": null,
-                "highlights": [],
-                "reactions": null,
-                "last_reaction": null
-            },
-            {
-                "id": 4488,
-                "entity": {
-                    "type": "leads",
-                    "id": 18512767,
-                    "title": "",
-                    "main_user_id": 3265900,
-                    "status_id": 53057606,
-                    "pipeline_id": 6133686
-                },
-                "created_at": 1709032745,
-                "updated_at": 1709098157,
-                "is_read": false,
-                "status": "opened",
-                "last_message": {
-                    "text": "Хорошо, спасиб, ждём)",
-                    "id": null,
-                    "author": "Александра",
-                    "last_message_at": 1709098155,
-                    "last_message_at_msec": 1709098155.4373,
-                    "profile_avatar": "https://amojo.amocrm.ru/attachments/profiles/7d6df8c1-bd2c-4c80-af7d-5109f627fe69/324807922-1422631238510016-1762781165678510612-n_128x128.jpg"
-                },
-                "chat_source": "amo.ext.6247798",
-                "contact_id": 21093329,
-                "chat_id": "de9a81d5-5eb2-4d21-94c3-3fbba806e445",
-                "found_message": [],
-                "is_starred": false,
-                "first_unanswered_message_at": 1709098155,
-                "first_unanswered_message_at_msec": 1709098155,
-                "type": "incoming",
-                "source_id": 19891286,
-                "closed_at": null,
-                "highlights": [],
-                "reactions": null,
-                "last_reaction": null
-            },
-            {
-                "id": 4483,
-                "entity": {
-                    "type": "leads",
-                    "id": 18509683,
-                    "title": "",
-                    "main_user_id": 10515842,
-                    "status_id": 53057606,
-                    "pipeline_id": 6133686
-                },
-                "created_at": 1709024815,
-                "updated_at": 1709096382,
-                "is_read": true,
-                "status": "opened",
-                "last_message": {
-                    "text": "Здравствуйте, вы обратились в компанию DOMA TAIGA вашим вопросом занимается Савелий    ",
-                    "id": 0,
-                    "author": "Salesbot",
-                    "last_message_at": 1709096381,
-                    "last_message_at_msec": 1709096381.457,
-                    "profile_avatar": "/frontend/images/interface/inbox/mesage_bot_avatar.png"
-                },
-                "chat_source": "vk",
-                "contact_id": null,
-                "chat_id": "81479f3d-62c9-4786-a637-ca51a3f1e26d",
-                "found_message": [],
-                "is_starred": false,
-                "first_unanswered_message_at": null,
-                "first_unanswered_message_at_msec": null,
-                "type": "incoming",
-                "source_id": 19891558,
-                "closed_at": null,
-                "highlights": [],
-                "reactions": null,
-                "last_reaction": null
-            },
-            {
-                "id": 537,
-                "entity": {
-                    "type": "leads",
-                    "id": 12550831,
-                    "title": "",
-                    "main_user_id": 8914706,
-                    "status_id": 57463850,
-                    "pipeline_id": 6806654
-                },
-                "created_at": 1685348930,
-                "updated_at": 1709096272,
-                "is_read": false,
-                "status": "opened",
-                "last_message": {
-                    "text": ">>>>>>>>>>>>>>>>>>>>\nДобрый день!\nВ целом вышло хорошо, только будто изображение сжато,  качество  немного уху...",
-                    "id": 0,
-                    "author": "Salesbot",
-                    "last_message_at": 1709096271,
-                    "last_message_at_msec": 1709096271.776,
-                    "profile_avatar": "/frontend/images/interface/inbox/mesage_bot_avatar.png"
-                },
-                "chat_source": "com.wazzup24-1",
-                "contact_id": null,
-                "chat_id": "7caf7c3a-292e-4859-b3e2-dd1ffd9b638f",
-                "found_message": [],
-                "is_starred": false,
-                "first_unanswered_message_at": null,
-                "first_unanswered_message_at_msec": null,
-                "type": "incoming",
-                "source_id": 20253714,
-                "closed_at": null,
-                "highlights": [],
-                "reactions": null,
-                "last_reaction": null
-            },
-            {
-                "id": 976,
-                "entity": {
-                    "type": "leads",
-                    "id": 11328567,
-                    "title": "+7 (951) 424-53-79, Tilda",
-                    "main_user_id": 8914706,
-                    "tags": [
-                        {
-                            "id": 137583,
-                            "name": "tilda",
-                            "color": null
-                        }
-                    ],
-                    "status_id": 53057610,
-                    "pipeline_id": 6133686
-                },
-                "created_at": 1687851778,
-                "updated_at": 1709093448,
-                "is_read": false,
-                "status": "opened",
-                "last_message": {
-                    "text": "Добрый! В процессе рассмотрения",
-                    "id": null,
-                    "author": "Любовь Плаксина",
-                    "last_message_at": 1709093445,
-                    "last_message_at_msec": 1709093445.1499,
-                    "profile_avatar": "https://amojo.amocrm.ru/attachments/profiles/7c4391af-5b68-41de-b8a5-c23a6c8b33dc/395056401-2500841633441548-8230778476074803509-n_128x128.jpg"
-                },
-                "chat_source": "amo.ext.6247798",
-                "contact_id": 14395899,
-                "chat_id": "e26caa90-a68c-4f87-a57c-c071021412f2",
-                "found_message": [],
-                "is_starred": false,
-                "first_unanswered_message_at": 1709093445,
-                "first_unanswered_message_at_msec": 1709093445,
-                "type": "outgoing_received_reply",
-                "source_id": 19891286,
-                "closed_at": null,
-                "highlights": [],
-                "reactions": null,
-                "last_reaction": null
-            },
-            {
-                "id": 4219,
-                "entity": {
-                    "type": "leads",
-                    "id": 18267651,
-                    "title": "Модульный дом",
-                    "main_user_id": 8914706,
-                    "status_id": 53057606,
-                    "pipeline_id": 6133686
-                },
-                "created_at": 1707904100,
-                "updated_at": 1709092891,
-                "is_read": true,
-                "status": "opened",
-                "last_message": {
-                    "text": "Добрый день! Видим, что вы не ответили на наше сообщение. На всякий случай уточняю - вам нас кто-то порекоменд...",
-                    "id": 9821606,
-                    "author": "Евгений",
-                    "last_message_at": 1709092891,
-                    "last_message_at_msec": 1709092891.046,
-                    "profile_avatar": "https://t89333024999.amocrm.ru/frontend/images/interface/avatars/7.jpeg"
-                },
-                "chat_source": "avito",
-                "contact_id": null,
-                "chat_id": "b43f47a8-d26c-408a-85d7-6f31edeb3f18",
-                "found_message": [],
-                "is_starred": false,
-                "first_unanswered_message_at": null,
-                "first_unanswered_message_at_msec": null,
-                "type": "incoming",
-                "source_id": 23490028,
-                "closed_at": null,
-                "highlights": [],
-                "reactions": null,
-                "last_reaction": null
-            },
-            {
-                "id": 3999,
-                "entity": {
-                    "type": "leads",
-                    "id": 18049605,
-                    "title": "",
-                    "main_user_id": 9821606,
-                    "status_id": 53057606,
-                    "pipeline_id": 6133686
-                },
-                "created_at": 1706970193,
-                "updated_at": 1709092795,
-                "is_read": true,
-                "status": "opened",
-                "last_message": {
-                    "text": "Ирина, добрый день! Подскажите, подобрали участок?",
-                    "id": 9821606,
-                    "author": "Евгений",
-                    "last_message_at": 1709092795,
-                    "last_message_at_msec": 1709092795.008,
-                    "profile_avatar": "https://t89333024999.amocrm.ru/frontend/images/interface/avatars/7.jpeg"
-                },
-                "chat_source": "com.wazzup24-1",
-                "contact_id": null,
-                "chat_id": "b62c90ac-656d-47ae-a196-a6e4ad7eb6c5",
-                "found_message": [],
-                "is_starred": false,
-                "first_unanswered_message_at": null,
-                "first_unanswered_message_at_msec": null,
-                "type": "incoming",
-                "source_id": 20253714,
-                "closed_at": null,
-                "highlights": [],
-                "reactions": null,
-                "last_reaction": null
-            },
-            {
-                "id": 2142,
-                "entity": {
-                    "type": "leads",
-                    "id": 13385215,
-                    "title": "+7 (913) 666-66-64, Tilda",
-                    "main_user_id": 9821606,
-                    "tags": [
-                        {
-                            "id": 137583,
-                            "name": "tilda",
-                            "color": null
-                        }
-                    ],
-                    "status_id": 53057606,
-                    "pipeline_id": 6133686
-                },
-                "created_at": 1692940250,
-                "updated_at": 1709092578,
-                "is_read": true,
-                "status": "opened",
-                "last_message": {
-                    "text": "Виктор, добрый день! Были осенью у нас на производстве, смотрели модульные дома. Подскажите, планы на строител...",
-                    "id": 9821606,
-                    "author": "Евгений",
-                    "last_message_at": 1709092577,
-                    "last_message_at_msec": 1709092577.36,
-                    "profile_avatar": "https://t89333024999.amocrm.ru/frontend/images/interface/avatars/7.jpeg"
-                },
-                "chat_source": "amo.ext.6247798",
-                "contact_id": null,
-                "chat_id": "ddf6ca98-83d9-45c0-bffc-2bba5dddab26",
-                "found_message": [],
-                "is_starred": false,
-                "first_unanswered_message_at": null,
-                "first_unanswered_message_at_msec": null,
-                "type": "outgoing_pending_reply",
-                "source_id": 19891286,
-                "closed_at": null,
-                "highlights": [],
-                "reactions": null,
-                "last_reaction": null
-            },
-            {
-                "id": 3898,
-                "entity": {
-                    "type": "leads",
-                    "id": 18335503,
-                    "title": "Заявка из WhatsApp",
-                    "main_user_id": 8914706,
-                    "status_id": 143,
-                    "pipeline_id": 6133686
-                },
-                "created_at": 1706350464,
-                "updated_at": 1709092282,
-                "is_read": false,
-                "status": "opened",
-                "last_message": {
-                    "text": "Доброе утро! За письмо в технострой и допник \n2500 + 1000",
-                    "id": null,
-                    "author": "Юрист Анна Федоровна Масалаб",
-                    "last_message_at": 1709092279,
-                    "last_message_at_msec": 1709092279.6677,
-                    "profile_avatar": "https://amojo.amocrm.ru/attachments/profiles/b35ae743-77d8-4496-a26a-f0761250743f/373399281-122634697573141-8014454524277567123-n_128x128.jpg"
-                },
-                "chat_source": "amo.ext.6247798",
-                "contact_id": 20955415,
-                "chat_id": "43a73926-8d1c-4cf8-9aee-b2d0e54801e4",
-                "found_message": [],
-                "is_starred": false,
-                "first_unanswered_message_at": 1709092279,
-                "first_unanswered_message_at_msec": 1709092279,
-                "type": "incoming",
-                "source_id": 19891286,
-                "closed_at": null,
-                "highlights": [],
-                "reactions": null,
-                "last_reaction": null
-            },
-            {
-                "id": 4355,
-                "entity": {
-                    "type": "leads",
-                    "id": 18393979,
-                    "title": "",
-                    "main_user_id": 8914706,
-                    "status_id": 64306106,
-                    "pipeline_id": 7806422
-                },
-                "created_at": 1708518404,
-                "updated_at": 1709057938,
-                "is_read": true,
-                "status": "opened",
-                "last_message": {
-                    "text": "то мечтает о собственном участке, но не желает тратить время и энергию на строительство и прочие хлопоты. Эти ...",
-                    "id": 8914706,
-                    "author": "Станислав",
-                    "last_message_at": 1709057937,
-                    "last_message_at_msec": 1709057937.694,
-                    "profile_avatar": "https://t89333024999.amocrm.ru/frontend/images/interface/avatars/7.jpeg"
-                },
-                "chat_source": "telegram",
-                "contact_id": null,
-                "chat_id": "e29819b9-8053-47f5-ab34-2ecce4b221af",
-                "found_message": [],
-                "is_starred": false,
-                "first_unanswered_message_at": null,
-                "first_unanswered_message_at_msec": null,
-                "type": "incoming",
-                "source_id": 23490649,
-                "closed_at": null,
-                "highlights": [],
-                "reactions": null,
-                "last_reaction": null
-            },
-            {
-                "id": 4401,
-                "entity": {
-                    "type": "leads",
-                    "id": 18434863,
-                    "title": "Модульный дом",
-                    "main_user_id": 10515842,
-                    "status_id": 143,
-                    "pipeline_id": 6133686
-                },
-                "created_at": 1708692628,
-                "updated_at": 1709052109,
-                "is_read": false,
-                "status": "opened",
-                "last_message": {
-                    "text": "Ок",
-                    "id": null,
-                    "author": "Евгений Бураменский",
-                    "last_message_at": 1709052108,
-                    "last_message_at_msec": 1709052108.9043,
-                    "profile_avatar": "https://amojo.amocrm.ru/attachments/profiles/5f962b0f-9ee5-4987-8d3e-95dae57c79dc/1-llV2hra2LLxAJri9VtCHKtglOrbIpTs-wyU4-xiKcYqiRZUMp70kKfceyBM4-TmVyBH0zdjBJjzOjh4w.jpg"
-                },
-                "chat_source": "avito",
-                "contact_id": 21028747,
-                "chat_id": "8948437f-3b56-4d34-8033-822ad3a448d2",
-                "found_message": [],
-                "is_starred": false,
-                "first_unanswered_message_at": 1709052108,
-                "first_unanswered_message_at_msec": 1709052108,
-                "type": "incoming",
-                "source_id": 23490028,
-                "closed_at": null,
-                "highlights": [],
-                "reactions": null,
-                "last_reaction": null
-            },
-            {
-                "id": 3806,
-                "entity": {
-                    "type": "leads",
-                    "id": 17743613,
-                    "title": "Заявка от (shVrk ",
-                    "main_user_id": 3265900,
-                    "tags": [
-                        {
-                            "id": 154699,
-                            "name": "WZ (79333024999)",
-                            "color": null
-                        }
-                    ],
-                    "status_id": 143,
-                    "pipeline_id": 6133686
-                },
-                "created_at": 1705583843,
-                "updated_at": 1709050930,
-                "is_read": false,
-                "status": "opened",
-                "last_message": {
-                    "text": ">>>>>>>>>>>>>>>>>>>>\nЭто Рабиновича...\nСамое близкое и по цене нормальное что нашёл\n____________________\n\nШеве...",
-                    "id": 0,
-                    "author": "Salesbot",
-                    "last_message_at": 1709050929,
-                    "last_message_at_msec": 1709050929.345,
-                    "profile_avatar": "/frontend/images/interface/inbox/mesage_bot_avatar.png"
-                },
-                "chat_source": "com.wazzup24-1",
-                "contact_id": null,
-                "chat_id": "ec04fdf8-ebdb-41d8-a9cf-6c4bada2833f",
-                "found_message": [],
-                "is_starred": false,
-                "first_unanswered_message_at": null,
-                "first_unanswered_message_at_msec": null,
-                "type": "outgoing_received_reply",
-                "source_id": 23481713,
-                "closed_at": null,
-                "highlights": [],
-                "reactions": null,
-                "last_reaction": null
-            },
-            {
-                "id": 4496,
-                "entity": {
-                    "type": "leads",
-                    "id": 18518531,
+                    "id": 14896296,
                     "title": "",
                     "main_user_id": 0,
-                    "status_id": 64306102,
-                    "pipeline_id": 7806422
+                    "status_id": 62377486,
+                    "pipeline_id": 7525354
                 },
-                "created_at": 1709048991,
-                "updated_at": 1709049335,
-                "is_read": true,
+                "created_at": 1709108586,
+                "updated_at": 1709108591,
+                "is_read": false,
                 "status": "opened",
                 "last_message": {
-                    "text": "Привет! У нас есть разнообразные модели модульных домов, которые точно понравятся тебе. Вот некоторые из них:\n...",
-                    "id": 8914706,
-                    "author": "Станислав",
-                    "last_message_at": 1709049334,
-                    "last_message_at_msec": 1709049334.929,
-                    "profile_avatar": "https://t89333024999.amocrm.ru/frontend/images/interface/avatars/7.jpeg"
+                    "text": "кп с монтажом",
+                    "id": null,
+                    "author": "Vito",
+                    "last_message_at": 1709108589,
+                    "last_message_at_msec": 1709108589.3477,
+                    "profile_avatar": "https://amojo.amocrm.ru/attachments/profiles/3d6a5410-2879-4db9-940b-da9bed27cf99/56060688-2610705505611447-4479514266818314240-n_128x128.jpg"
                 },
-                "chat_source": "telegram",
-                "contact_id": null,
-                "chat_id": "ac348974-46db-481f-8a90-71a078ddc4b5",
+                "chat_source": "amo.ext.6247798",
+                "contact_id": 19487728,
+                "chat_id": "1496781c-4791-40da-99c0-e5e0bcd24f46",
                 "found_message": [],
                 "is_starred": false,
-                "first_unanswered_message_at": null,
-                "first_unanswered_message_at_msec": null,
+                "first_unanswered_message_at": 1709108581,
+                "first_unanswered_message_at_msec": 1709108581,
                 "type": "incoming",
-                "source_id": 23490649,
+                "source_id": 23607034,
                 "closed_at": null,
                 "highlights": [],
                 "reactions": null,
                 "last_reaction": null
             },
             {
-                "id": 4495,
+                "id": 824,
                 "entity": {
                     "type": "leads",
-                    "id": 18518103,
+                    "id": 12444978,
+                    "title": "Погреб 10",
+                    "main_user_id": 10372898,
+                    "tags": [
+                        {
+                            "id": 116064,
+                            "name": "погреб",
+                            "color": null
+                        }
+                    ],
+                    "status_id": 63674965,
+                    "pipeline_id": 7525354
+                },
+                "created_at": 1709107338,
+                "updated_at": 1709107338,
+                "is_read": false,
+                "status": "opened",
+                "last_message": {
+                    "text": "7 просека, 8-проезд, дом 37.",
+                    "id": null,
+                    "author": "Владимир",
+                    "last_message_at": 1709107325,
+                    "last_message_at_msec": 1709107325.5694,
+                    "profile_avatar": "/frontend/images/interface/avatars/5.jpeg"
+                },
+                "chat_source": "amo.ext.6247798",
+                "contact_id": 19189774,
+                "chat_id": "7b25245b-a4e6-4090-bc89-39e36564c7a6",
+                "found_message": [],
+                "is_starred": false,
+                "first_unanswered_message_at": 1709107325,
+                "first_unanswered_message_at_msec": 1709107325,
+                "type": "incoming",
+                "source_id": 23607034,
+                "closed_at": null,
+                "highlights": [],
+                "reactions": null,
+                "last_reaction": null
+            },
+            {
+                "id": 817,
+                "entity": {
+                    "type": "leads",
+                    "id": 14912770,
                     "title": "",
-                    "main_user_id": 0,
-                    "status_id": 64306102,
-                    "pipeline_id": 7806422
-                },
-                "created_at": 1709047815,
-                "updated_at": 1709047961,
-                "is_read": true,
-                "status": "opened",
-                "last_message": {
-                    "text": "Благодарим вас за интерес! Компания \"Дома Тайга\" занимается производством и монтажом модульных домов. Наша осн...",
-                    "id": 8914706,
-                    "author": "Станислав",
-                    "last_message_at": 1709047960,
-                    "last_message_at_msec": 1709047960.5,
-                    "profile_avatar": "https://t89333024999.amocrm.ru/frontend/images/interface/avatars/7.jpeg"
-                },
-                "chat_source": "telegram",
-                "contact_id": null,
-                "chat_id": "35aa857f-8c6a-4129-8a23-e32a639a8264",
-                "found_message": [],
-                "is_starred": false,
-                "first_unanswered_message_at": null,
-                "first_unanswered_message_at_msec": null,
-                "type": "incoming",
-                "source_id": 23490649,
-                "closed_at": null,
-                "highlights": [],
-                "reactions": null,
-                "last_reaction": null
-            },
-            {
-                "id": 3946,
-                "entity": {
-                    "type": "leads",
-                    "id": 17982889,
-                    "title": "",
-                    "main_user_id": 3265900,
-                    "status_id": 143,
-                    "pipeline_id": 6133686
-                },
-                "created_at": 1706684555,
-                "updated_at": 1709045324,
-                "is_read": false,
-                "status": "opened",
-                "last_message": {
-                    "text": "У меня не было счета, ты написал он появился. Видимо баг был какой-то",
-                    "id": 0,
-                    "author": "Salesbot",
-                    "last_message_at": 1709045322,
-                    "last_message_at_msec": 1709045322.961,
-                    "profile_avatar": "/frontend/images/interface/inbox/mesage_bot_avatar.png"
-                },
-                "chat_source": "com.wazzup24-1",
-                "contact_id": null,
-                "chat_id": "27bc3751-4d19-46ac-bc60-3e787e6e2252",
-                "found_message": [],
-                "is_starred": false,
-                "first_unanswered_message_at": null,
-                "first_unanswered_message_at_msec": null,
-                "type": "incoming",
-                "source_id": 20253714,
-                "closed_at": null,
-                "highlights": [],
-                "reactions": null,
-                "last_reaction": null
-            },
-            {
-                "id": 363,
-                "entity": {
-                    "type": "leads",
-                    "id": 10229995,
-                    "title": "",
-                    "main_user_id": 3265900,
-                    "status_id": 143,
-                    "pipeline_id": 6133686
-                },
-                "created_at": 1684307406,
-                "updated_at": 1709041716,
-                "is_read": false,
-                "status": "opened",
-                "last_message": {
-                    "text": "Содержание заявки:\nEmail: kostya_super4444@rambler.ru\nName: Константин\nPhone: +79236920079\n\nДополнительная инф...",
-                    "id": null,
-                    "author": "Елена",
-                    "last_message_at": 1709041715,
-                    "last_message_at_msec": 1709041715.193,
-                    "profile_avatar": "/frontend/images/interface/avatars/2.jpeg"
-                },
-                "chat_source": "com.wazzup24-1",
-                "contact_id": 13141261,
-                "chat_id": "67c4755c-fad9-4d6e-8695-d10c3dc704b9",
-                "found_message": [],
-                "is_starred": false,
-                "first_unanswered_message_at": 1709019062,
-                "first_unanswered_message_at_msec": 1709019062,
-                "type": "incoming",
-                "source_id": 20253714,
-                "closed_at": null,
-                "highlights": [],
-                "reactions": null,
-                "last_reaction": null
-            },
-            {
-                "id": 4489,
-                "entity": {
-                    "type": "leads",
-                    "id": 18451843,
-                    "title": "Сделка 79139616226",
-                    "main_user_id": 8914706,
-                    "status_id": 53057606,
-                    "pipeline_id": 6133686
-                },
-                "created_at": 1709033545,
-                "updated_at": 1709033545,
-                "is_read": true,
-                "status": "opened",
-                "last_message": {
-                    "text": "Не смог до вас дозвониться. Было бы удобнее подъехать на нашу выставку и посмотреть на дома в живую. Покажем п...",
-                    "id": 10515842,
-                    "author": "Савелий",
-                    "last_message_at": 1709033543,
-                    "last_message_at_msec": 1709033543.419,
-                    "profile_avatar": "https://t89333024999.amocrm.ru/frontend/images/interface/avatars/3.jpeg"
-                },
-                "chat_source": "amo.ext.6247798",
-                "contact_id": null,
-                "chat_id": "4bc95e97-838c-42d7-80c4-16e74d971275",
-                "found_message": [],
-                "is_starred": false,
-                "first_unanswered_message_at": null,
-                "first_unanswered_message_at_msec": null,
-                "type": "outgoing_pending_reply",
-                "source_id": 19891286,
-                "closed_at": null,
-                "highlights": [],
-                "reactions": null,
-                "last_reaction": null
-            },
-            {
-                "id": 3585,
-                "entity": {
-                    "type": "leads",
-                    "id": 17518606,
-                    "title": "",
-                    "main_user_id": 9821606,
-                    "status_id": 53057606,
-                    "pipeline_id": 6133686
-                },
-                "created_at": 1704213787,
-                "updated_at": 1709033395,
-                "is_read": true,
-                "status": "opened",
-                "last_message": {
-                    "text": "https://omsk.tmf-market.ru/",
-                    "id": 9821606,
-                    "author": "Евгений",
-                    "last_message_at": 1709033394,
-                    "last_message_at_msec": 1709033394.591,
-                    "profile_avatar": "https://t89333024999.amocrm.ru/frontend/images/interface/avatars/7.jpeg"
-                },
-                "chat_source": "vk",
-                "contact_id": null,
-                "chat_id": "26ff82a8-7d33-43db-8be4-ee9402e07c20",
-                "found_message": [],
-                "is_starred": false,
-                "first_unanswered_message_at": null,
-                "first_unanswered_message_at_msec": null,
-                "type": "incoming",
-                "source_id": 19891554,
-                "closed_at": null,
-                "highlights": [],
-                "reactions": null,
-                "last_reaction": null
-            },
-            {
-                "id": 1048,
-                "entity": {
-                    "type": "leads",
-                    "id": 11516549,
-                    "title": "Заявка: Новый квиз опрос",
-                    "main_user_id": 10515842,
+                    "main_user_id": 10372898,
                     "tags": [
                         {
-                            "id": 137127,
-                            "name": "Квиз",
+                            "id": 116064,
+                            "name": "погреб",
                             "color": null
                         },
                         {
-                            "id": 165849,
-                            "name": "yandex_ads",
+                            "id": 116286,
+                            "name": "септик",
                             "color": null
                         }
                     ],
-                    "status_id": 53057606,
-                    "pipeline_id": 6133686
+                    "status_id": 63521737,
+                    "pipeline_id": 7525354
                 },
-                "created_at": 1688366004,
-                "updated_at": 1709030943,
+                "created_at": 1709097227,
+                "updated_at": 1709098267,
                 "is_read": true,
                 "status": "opened",
                 "last_message": {
-                    "text": "Хорошо, приезжайте в субботу с 10 до 14 часов.",
-                    "id": 10515842,
-                    "author": "Савелий",
-                    "last_message_at": 1709030942,
-                    "last_message_at_msec": 1709030942.31,
-                    "profile_avatar": "https://t89333024999.amocrm.ru/frontend/images/interface/avatars/3.jpeg"
+                    "text": "Но есть важная информация если хотите все таки 10%сэкономить. С 1 марта будет повышение стоимости.\nЕсли на сеп...",
+                    "id": 10372898,
+                    "author": "Alex",
+                    "last_message_at": 1709098267,
+                    "last_message_at_msec": 1709098267.2,
+                    "profile_avatar": "https://ckuralmarket.amocrm.ru/frontend/images/interface/avatars/9.jpeg"
                 },
                 "chat_source": "amo.ext.6247798",
                 "contact_id": null,
-                "chat_id": "a6f03d1a-fc58-4d63-9b28-b9a0aca79bf5",
-                "found_message": [],
-                "is_starred": false,
-                "first_unanswered_message_at": null,
-                "first_unanswered_message_at_msec": null,
-                "type": "outgoing_received_reply",
-                "source_id": null,
-                "closed_at": null,
-                "highlights": [],
-                "reactions": null,
-                "last_reaction": null
-            },
-            {
-                "id": 1049,
-                "entity": {
-                    "type": "leads",
-                    "id": 11516549,
-                    "title": "Заявка: Новый квиз опрос",
-                    "main_user_id": 10515842,
-                    "tags": [
-                        {
-                            "id": 137127,
-                            "name": "Квиз",
-                            "color": null
-                        },
-                        {
-                            "id": 165849,
-                            "name": "yandex_ads",
-                            "color": null
-                        }
-                    ],
-                    "status_id": 53057606,
-                    "pipeline_id": 6133686
-                },
-                "created_at": 1688366026,
-                "updated_at": 1709030895,
-                "is_read": false,
-                "status": "opened",
-                "last_message": {
-                    "text": "Добрый день, к сожалению не получилось, планирую в эту субботу.",
-                    "id": null,
-                    "author": "Лариса",
-                    "last_message_at": 1709030892,
-                    "last_message_at_msec": 1709030892.2088,
-                    "profile_avatar": "https://amojo.amocrm.ru/attachments/profiles/dae24416-4324-4272-935d-338e16b320ff/fztlv-248843597-1001981443859602-2760694332001148659-n_128x128.jpg"
-                },
-                "chat_source": "amo.ext.6247798",
-                "contact_id": 14556171,
-                "chat_id": "839a17bf-af4d-4b43-985c-2394e75d0eb6",
-                "found_message": [],
-                "is_starred": false,
-                "first_unanswered_message_at": 1709030892,
-                "first_unanswered_message_at_msec": 1709030892,
-                "type": "outgoing_received_reply",
-                "source_id": 19891286,
-                "closed_at": null,
-                "highlights": [],
-                "reactions": null,
-                "last_reaction": null
-            },
-            {
-                "id": 4487,
-                "entity": {
-                    "type": "leads",
-                    "id": 18511871,
-                    "title": "Сделка 79083169534",
-                    "main_user_id": 9821606,
-                    "status_id": 53057606,
-                    "pipeline_id": 6133686
-                },
-                "created_at": 1709030596,
-                "updated_at": 1709030597,
-                "is_read": true,
-                "status": "opened",
-                "last_message": {
-                    "text": "Здравствуйте, вы обратились в компанию DOMA TAIGA вашим вопросом занимается Евгений    ",
-                    "id": 0,
-                    "author": "Salesbot",
-                    "last_message_at": 1709030596,
-                    "last_message_at_msec": 1709030596.007,
-                    "profile_avatar": "/frontend/images/interface/inbox/mesage_bot_avatar.png"
-                },
-                "chat_source": "amo.ext.6247798",
-                "contact_id": null,
-                "chat_id": "b3d11fdb-4eb0-498f-977e-6a0ddbebbd67",
-                "found_message": [],
-                "is_starred": false,
-                "first_unanswered_message_at": null,
-                "first_unanswered_message_at_msec": null,
-                "type": "outgoing_pending_reply",
-                "source_id": null,
-                "closed_at": null,
-                "highlights": [],
-                "reactions": null,
-                "last_reaction": null
-            },
-            {
-                "id": 4486,
-                "entity": {
-                    "type": "leads",
-                    "id": 18511067,
-                    "title": "Сделка 79620310020",
-                    "main_user_id": 9821606,
-                    "tags": [
-                        {
-                            "id": 298573,
-                            "name": "Ангар",
-                            "color": null
-                        }
-                    ],
-                    "status_id": 53057606,
-                    "pipeline_id": 6133686
-                },
-                "created_at": 1709028497,
-                "updated_at": 1709029959,
-                "is_read": false,
-                "status": "opened",
-                "last_message": {
-                    "text": "Хорошо",
-                    "id": null,
-                    "author": "Контакт 79620310020",
-                    "last_message_at": 1709029956,
-                    "last_message_at_msec": 1709029956.9322,
-                    "profile_avatar": "https://amojo.amocrm.ru/attachments/profiles/6e284a2e-17dd-4df3-9412-9ed7713d7f20/427219827-1046837119720188-3910553158922111260-n_128x128.jpg"
-                },
-                "chat_source": "amo.ext.6247798",
-                "contact_id": 21091929,
-                "chat_id": "01a24e83-0e48-4e55-b6b6-b3c683922303",
-                "found_message": [],
-                "is_starred": false,
-                "first_unanswered_message_at": 1709029956,
-                "first_unanswered_message_at_msec": 1709029956,
-                "type": "outgoing_received_reply",
-                "source_id": 19891286,
-                "closed_at": null,
-                "highlights": [],
-                "reactions": null,
-                "last_reaction": null
-            },
-            {
-                "id": 3961,
-                "entity": {
-                    "type": "leads",
-                    "id": 17979265,
-                    "title": "Заявка: Вагончики",
-                    "main_user_id": 3265900,
-                    "tags": [
-                        {
-                            "id": 137127,
-                            "name": "Квиз",
-                            "color": null
-                        },
-                        {
-                            "id": 159389,
-                            "name": "Бытовка",
-                            "color": null
-                        },
-                        {
-                            "id": 165849,
-                            "name": "yandex_ads",
-                            "color": null
-                        }
-                    ],
-                    "status_id": 53057606,
-                    "pipeline_id": 6133686
-                },
-                "created_at": 1706766799,
-                "updated_at": 1709028438,
-                "is_read": false,
-                "status": "opened",
-                "last_message": {
-                    "text": "Добро.🤝",
-                    "id": null,
-                    "author": "Сергей Иванович",
-                    "last_message_at": 1709028435,
-                    "last_message_at_msec": 1709028435.3696,
-                    "profile_avatar": "https://amojo.amocrm.ru/attachments/profiles/6b4e4cba-b239-4411-aa41-c7c45c46fb33/229861187-2118020408360192-5488155412865872853-n_128x128.jpg"
-                },
-                "chat_source": "amo.ext.6247798",
-                "contact_id": 20680535,
-                "chat_id": "f63038f7-320a-4e2b-911c-2de4282554fa",
-                "found_message": [],
-                "is_starred": false,
-                "first_unanswered_message_at": 1709028435,
-                "first_unanswered_message_at_msec": 1709028435,
-                "type": "outgoing_received_reply",
-                "source_id": 19891286,
-                "closed_at": null,
-                "highlights": [],
-                "reactions": null,
-                "last_reaction": null
-            },
-            {
-                "id": 4485,
-                "entity": {
-                    "type": "leads",
-                    "id": 18509517,
-                    "title": "Сделка 79081166801",
-                    "main_user_id": 9821606,
-                    "status_id": 53057606,
-                    "pipeline_id": 6133686
-                },
-                "created_at": 1709027719,
-                "updated_at": 1709027719,
-                "is_read": true,
-                "status": "opened",
-                "last_message": {
-                    "text": "Добрый день! В продолжении нашего разговора приглашаю вас в субботу с 10 до 14 часов на выставку.  Адрес: Омск...",
-                    "id": 9821606,
-                    "author": "Евгений",
-                    "last_message_at": 1709027718,
-                    "last_message_at_msec": 1709027718.115,
-                    "profile_avatar": "https://t89333024999.amocrm.ru/frontend/images/interface/avatars/7.jpeg"
-                },
-                "chat_source": "amo.ext.6247798",
-                "contact_id": null,
-                "chat_id": "efb68a26-6c3b-4779-8eab-a31ea8119bb3",
-                "found_message": [],
-                "is_starred": false,
-                "first_unanswered_message_at": null,
-                "first_unanswered_message_at_msec": null,
-                "type": "outgoing_pending_reply",
-                "source_id": 19891286,
-                "closed_at": null,
-                "highlights": [],
-                "reactions": null,
-                "last_reaction": null
-            },
-            {
-                "id": 4484,
-                "entity": {
-                    "type": "leads",
-                    "id": 18509517,
-                    "title": "Сделка 79081166801",
-                    "main_user_id": 9821606,
-                    "status_id": 53057606,
-                    "pipeline_id": 6133686
-                },
-                "created_at": 1709026732,
-                "updated_at": 1709026732,
-                "is_read": true,
-                "status": "opened",
-                "last_message": {
-                    "text": "Здравствуйте, вы обратились в компанию DOMA TAIGA вашим вопросом занимается Евгений    ",
-                    "id": 0,
-                    "author": "Salesbot",
-                    "last_message_at": 1709026731,
-                    "last_message_at_msec": 1709026731.619,
-                    "profile_avatar": "/frontend/images/interface/inbox/mesage_bot_avatar.png"
-                },
-                "chat_source": "amo.ext.6247798",
-                "contact_id": null,
-                "chat_id": "74f21a82-778a-4163-b1fd-6c4f0db1d4ac",
-                "found_message": [],
-                "is_starred": false,
-                "first_unanswered_message_at": null,
-                "first_unanswered_message_at_msec": null,
-                "type": "outgoing_pending_reply",
-                "source_id": null,
-                "closed_at": null,
-                "highlights": [],
-                "reactions": null,
-                "last_reaction": null
-            },
-            {
-                "id": 4479,
-                "entity": {
-                    "type": "leads",
-                    "id": 18488213,
-                    "title": "Сделка 79048200532",
-                    "main_user_id": 10515842,
-                    "status_id": 53057606,
-                    "pipeline_id": 6133686
-                },
-                "created_at": 1709018301,
-                "updated_at": 1709025809,
-                "is_read": true,
-                "status": "opened",
-                "last_message": {
-                    "text": "Вот проект такого дома: https://xn----7sbbaoc2bur7b.xn--p1ai/business/tproduct/647522370-634689053761-glamping...",
-                    "id": 9821606,
-                    "author": "Евгений",
-                    "last_message_at": 1709025809,
-                    "last_message_at_msec": 1709025809.023,
-                    "profile_avatar": "https://t89333024999.amocrm.ru/frontend/images/interface/avatars/7.jpeg"
-                },
-                "chat_source": "amo.ext.6247798",
-                "contact_id": null,
-                "chat_id": "f1d62f35-9edd-4cea-aef6-8fb4aecfc646",
-                "found_message": [],
-                "is_starred": false,
-                "first_unanswered_message_at": null,
-                "first_unanswered_message_at_msec": null,
-                "type": "outgoing_received_reply",
-                "source_id": 19891286,
-                "closed_at": null,
-                "highlights": [],
-                "reactions": null,
-                "last_reaction": null
-            },
-            {
-                "id": 4341,
-                "entity": {
-                    "type": "leads",
-                    "id": 18379479,
-                    "title": "Модульный дом",
-                    "main_user_id": 10515842,
-                    "status_id": 53057606,
-                    "pipeline_id": 6133686
-                },
-                "created_at": 1708447903,
-                "updated_at": 1709025045,
-                "is_read": true,
-                "status": "opened",
-                "last_message": {
-                    "text": "Добрый день! Подскажите, посмотрели планировки на нашем сайте? Какая планировка вам понравилась?",
-                    "id": 10515842,
-                    "author": "Савелий",
-                    "last_message_at": 1709025044,
-                    "last_message_at_msec": 1709025044.386,
-                    "profile_avatar": "https://t89333024999.amocrm.ru/frontend/images/interface/avatars/3.jpeg"
-                },
-                "chat_source": "avito",
-                "contact_id": null,
-                "chat_id": "75cdd256-f956-4af3-8d25-41de836d2767",
+                "chat_id": "8883f015-fa6e-4192-9dc8-52910245f0ba",
                 "found_message": [],
                 "is_starred": false,
                 "first_unanswered_message_at": null,
                 "first_unanswered_message_at_msec": null,
                 "type": "incoming",
-                "source_id": 23490028,
-                "closed_at": null,
-                "highlights": [],
-                "reactions": null,
-                "last_reaction": null
-            },
-            {
-                "id": 4374,
-                "entity": {
-                    "type": "leads",
-                    "id": 18406601,
-                    "title": "Модульный дом",
-                    "main_user_id": 10515842,
-                    "status_id": 53057606,
-                    "pipeline_id": 6133686
-                },
-                "created_at": 1708583588,
-                "updated_at": 1709024920,
-                "is_read": true,
-                "status": "opened",
-                "last_message": {
-                    "text": "Добрый день! Подскажите, смотрели планировки на сайте? Какая планировка вам понравилась?",
-                    "id": 10515842,
-                    "author": "Савелий",
-                    "last_message_at": 1709024919,
-                    "last_message_at_msec": 1709024919.502,
-                    "profile_avatar": "https://t89333024999.amocrm.ru/frontend/images/interface/avatars/3.jpeg"
-                },
-                "chat_source": "amo.ext.6247798",
-                "contact_id": null,
-                "chat_id": "bff9d4d9-068c-48c7-8a6c-e6ec22a41ba6",
-                "found_message": [],
-                "is_starred": false,
-                "first_unanswered_message_at": null,
-                "first_unanswered_message_at_msec": null,
-                "type": "outgoing_received_reply",
-                "source_id": 19891286,
-                "closed_at": null,
-                "highlights": [],
-                "reactions": null,
-                "last_reaction": null
-            },
-            {
-                "id": 3539,
-                "entity": {
-                    "type": "leads",
-                    "id": 17134399,
-                    "title": "Заявка: Новый квиз опрос",
-                    "main_user_id": 9821606,
-                    "tags": [
-                        {
-                            "id": 137127,
-                            "name": "Квиз",
-                            "color": null
-                        },
-                        {
-                            "id": 159389,
-                            "name": "Бытовка",
-                            "color": null
-                        },
-                        {
-                            "id": 165849,
-                            "name": "yandex_ads",
-                            "color": null
-                        }
-                    ],
-                    "status_id": 57450258,
-                    "pipeline_id": 6133686
-                },
-                "created_at": 1702881071,
-                "updated_at": 1709024930,
-                "is_read": false,
-                "status": "opened",
-                "last_message": {
-                    "text": "Ок",
-                    "id": null,
-                    "author": "Вячеслав",
-                    "last_message_at": 1709024901,
-                    "last_message_at_msec": 1709024901.39,
-                    "profile_avatar": "https://amojo.amocrm.ru/attachments/profiles/dc31fcdd-2ca6-4ac8-ad4e-4d93b3a88ced/341539801-122431084145954-3684558763725157313-n_128x128.jpg"
-                },
-                "chat_source": "amo.ext.6247798",
-                "contact_id": 19947673,
-                "chat_id": "bcd544d0-5691-47a2-81e7-db9da282d50b",
-                "found_message": [],
-                "is_starred": false,
-                "first_unanswered_message_at": 1709024901,
-                "first_unanswered_message_at_msec": 1709024901,
-                "type": "outgoing_received_reply",
-                "source_id": 19891286,
-                "closed_at": null,
-                "highlights": [],
-                "reactions": null,
-                "last_reaction": null
-            },
-            {
-                "id": 4287,
-                "entity": {
-                    "type": "leads",
-                    "id": 18320549,
-                    "title": "Модульный дом",
-                    "main_user_id": 10515842,
-                    "status_id": 143,
-                    "pipeline_id": 6133686
-                },
-                "created_at": 1708185828,
-                "updated_at": 1709024817,
-                "is_read": true,
-                "status": "opened",
-                "last_message": {
-                    "text": "Добрый день! Подскажите, заходили на наш сайт? Какая планировка понравилась?",
-                    "id": 10515842,
-                    "author": "Савелий",
-                    "last_message_at": 1709024816,
-                    "last_message_at_msec": 1709024816.331,
-                    "profile_avatar": "https://t89333024999.amocrm.ru/frontend/images/interface/avatars/3.jpeg"
-                },
-                "chat_source": "avito",
-                "contact_id": null,
-                "chat_id": "02a65cd5-8ace-485d-8cf5-a39d03b3e76d",
-                "found_message": [],
-                "is_starred": false,
-                "first_unanswered_message_at": null,
-                "first_unanswered_message_at_msec": null,
-                "type": "incoming",
-                "source_id": 23490028,
-                "closed_at": null,
-                "highlights": [],
-                "reactions": null,
-                "last_reaction": null
-            },
-            {
-                "id": 4285,
-                "entity": {
-                    "type": "leads",
-                    "id": 18314959,
-                    "title": "",
-                    "main_user_id": 10515842,
-                    "status_id": 53057606,
-                    "pipeline_id": 6133686
-                },
-                "created_at": 1708160460,
-                "updated_at": 1709024680,
-                "is_read": true,
-                "status": "opened",
-                "last_message": {
-                    "text": "Добрый день, Денис! Сейчас в производстве находится несколько бытовок, в том числе и ваших размеров. Всё можно...",
-                    "id": 10515842,
-                    "author": "Савелий",
-                    "last_message_at": 1709024679,
-                    "last_message_at_msec": 1709024679.474,
-                    "profile_avatar": "https://t89333024999.amocrm.ru/frontend/images/interface/avatars/3.jpeg"
-                },
-                "chat_source": "amo.ext.6247798",
-                "contact_id": null,
-                "chat_id": "cbf5d25b-0865-4384-8fc8-6e2972cb8904",
-                "found_message": [],
-                "is_starred": false,
-                "first_unanswered_message_at": null,
-                "first_unanswered_message_at_msec": null,
-                "type": "incoming",
-                "source_id": 19891286,
-                "closed_at": null,
-                "highlights": [],
-                "reactions": null,
-                "last_reaction": null
-            },
-            {
-                "id": 4481,
-                "entity": {
-                    "type": "leads",
-                    "id": 17672279,
-                    "title": "+7 (929) 360-59-00, Tilda",
-                    "main_user_id": 10515842,
-                    "tags": [
-                        {
-                            "id": 137583,
-                            "name": "tilda",
-                            "color": null
-                        }
-                    ],
-                    "status_id": 53057606,
-                    "pipeline_id": 6133686
-                },
-                "created_at": 1709022232,
-                "updated_at": 1709024684,
-                "is_read": false,
-                "status": "opened",
-                "last_message": {
-                    "text": "Добрый добрый\nК сожалению нет\nПока всё в поискк",
-                    "id": null,
-                    "author": "Андрей",
-                    "last_message_at": 1709024614,
-                    "last_message_at_msec": 1709024614.2176,
-                    "profile_avatar": "https://amojo.amocrm.ru/attachments/profiles/771720da-4cd0-461d-8ca6-0a7226989f86/144211742-428486991561747-6716769824057099990-n_128x128.jpg"
-                },
-                "chat_source": "amo.ext.6247798",
-                "contact_id": 20424389,
-                "chat_id": "5b308984-2739-48c7-82af-3e6a0f028914",
-                "found_message": [],
-                "is_starred": false,
-                "first_unanswered_message_at": 1709024614,
-                "first_unanswered_message_at_msec": 1709024614,
-                "type": "outgoing_received_reply",
-                "source_id": 19891286,
-                "closed_at": null,
-                "highlights": [],
-                "reactions": null,
-                "last_reaction": null
-            },
-            {
-                "id": 4115,
-                "entity": {
-                    "type": "leads",
-                    "id": 18184929,
-                    "title": "Модульный дом",
-                    "main_user_id": 10515842,
-                    "status_id": 143,
-                    "pipeline_id": 6133686
-                },
-                "created_at": 1707549579,
-                "updated_at": 1709024592,
-                "is_read": true,
-                "status": "opened",
-                "last_message": {
-                    "text": "Если нужна помощь в подборе участка, то можем подключить нашего риэлтора, для вас услуга будет бесплатной.",
-                    "id": 9821606,
-                    "author": "Евгений",
-                    "last_message_at": 1709024590,
-                    "last_message_at_msec": 1709024590.141,
-                    "profile_avatar": "https://t89333024999.amocrm.ru/frontend/images/interface/avatars/7.jpeg"
-                },
-                "chat_source": "avito",
-                "contact_id": null,
-                "chat_id": "8b077164-3480-4388-8ef8-451fc221cb7b",
-                "found_message": [],
-                "is_starred": false,
-                "first_unanswered_message_at": null,
-                "first_unanswered_message_at_msec": null,
-                "type": "incoming",
-                "source_id": 23490028,
-                "closed_at": null,
-                "highlights": [],
-                "reactions": null,
-                "last_reaction": null
-            },
-            {
-                "id": 4482,
-                "entity": {
-                    "type": "leads",
-                    "id": 18391931,
-                    "title": "Сделка 79528970089",
-                    "main_user_id": 10515842,
-                    "status_id": 53057606,
-                    "pipeline_id": 6133686
-                },
-                "created_at": 1709024511,
-                "updated_at": 1709024511,
-                "is_read": true,
-                "status": "opened",
-                "last_message": {
-                    "text": "Добрый день! Раннее связывались по строительству дома, вы смотрели наши дома на авито. Больше наших планировок...",
-                    "id": 10515842,
-                    "author": "Савелий",
-                    "last_message_at": 1709024509,
-                    "last_message_at_msec": 1709024509.746,
-                    "profile_avatar": "https://t89333024999.amocrm.ru/frontend/images/interface/avatars/3.jpeg"
-                },
-                "chat_source": "amo.ext.6247798",
-                "contact_id": null,
-                "chat_id": "eb9db589-4814-47fc-ab57-9c5792dcf3d1",
-                "found_message": [],
-                "is_starred": false,
-                "first_unanswered_message_at": null,
-                "first_unanswered_message_at_msec": null,
-                "type": "outgoing_pending_reply",
-                "source_id": 19891286,
+                "source_id": 23607034,
                 "closed_at": null,
                 "highlights": [],
                 "reactions": null,

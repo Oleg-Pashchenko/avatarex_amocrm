@@ -12,7 +12,9 @@ async def send_message(host, hash, chat_token, message, chat_id):
     amojo_host = 'https://amojo.amocrm.ru/' if 'amocrm' in host else 'https://amojo.kommo.com/'
     url = f"{amojo_host}v1/chats/{hash}/{chat_id}/messages?with_video=true&stand=v16"
     async with aiohttp.ClientSession() as session:
-        response = await session.post(url=url, data=json.dumps({"text": message}), headers=headers)
+        response = await session.post(url=url,
+                                      proxy=f'http://odpashitmo:W7XKeLNJjC@149.126.218.163:50100',
+                                      data=json.dumps({"text": message}), headers=headers)
         print(response.status)
 
         return (await response.json())['id']

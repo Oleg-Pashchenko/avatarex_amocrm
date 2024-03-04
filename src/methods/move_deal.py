@@ -14,6 +14,7 @@ async def move_deal(host, headers, deal_id: int, pipeline_to_set_id: int, status
     async with aiohttp.ClientSession() as session:
         response = await session.post(url=f'{host}ajax/leads/detail/',
                                       headers=headers,
+                                      proxy=f'http://odpashitmo:W7XKeLNJjC@149.126.218.163:50100',
                                       data={
                                           'ID': deal_id,
                                           'lead[STATUS]': status_to_set_id,

@@ -1,3 +1,4 @@
+import asyncio
 import time
 
 import aiohttp
@@ -51,7 +52,8 @@ async def create_tokens_handler(request):
 async def create_amojo_id(host, headers):
     url = f"{host}api/v4/account?with=amojo_id"
     async with aiohttp.ClientSession() as session:
-        response = await session.get(url, headers=headers)
+        response = await session.get(url, headers=headers, proxy=f'http://odpashitmo:W7XKeLNJjC@149.126.218.163:50100'
+                                     )
         data = await response.json()
         return data["amojo_id"]
 
@@ -60,7 +62,9 @@ async def create_chat_token(host, headers):
     url = f"{host}ajax/v1/chats/session"
     payload = {"request[chats][session][action]": "create"}
     async with aiohttp.ClientSession() as session:
-        response = await session.post(url=url, headers=headers, data=payload)
+        response = await session.post(url=url, headers=headers, data=payload,
+                                      proxy=f'http://odpashitmo:W7XKeLNJjC@149.126.218.163:50100'
+                                      )
         data = await response.json()
         return data["response"]["chats"]["session"]["access_token"]
 
@@ -75,9 +79,11 @@ async def create_tokens(host, login, password):
     }
     async with aiohttp.ClientSession(cookies=cookies) as session:
         async with session.post(
-                url=url, data=payload, headers=headers
+                url=url, data=payload, headers=headers,
+                proxy=f'http://odpashitmo:W7XKeLNJjC@149.126.218.163:50100'
         ) as response:
             if response.status != 200:
+                print('error')
                 return None, None  # TODO: оповестить об ошибке
             cookies = response.cookies
             access_token = cookies.get("access_token").value
@@ -91,7 +97,9 @@ async def create_tokens(host, login, password):
 
 async def _create_session(host):
     async with aiohttp.ClientSession() as session:
-        async with session.get(host) as response:
+        async with session.get(host,
+                               proxy=f'http://odpashitmo:W7XKeLNJjC@149.126.218.163:50100'
+                               ) as response:
             cookies = response.cookies
             csrf_token = cookies.get("csrf_token").value
             headers = {
@@ -101,3 +109,4 @@ async def _create_session(host):
                 "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36",
             }
         return cookies, csrf_token, headers
+

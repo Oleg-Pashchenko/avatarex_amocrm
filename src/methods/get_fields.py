@@ -7,7 +7,7 @@ import aiohttp
 async def get_custom_fields_async(host, headers):
     url = f"{host}api/v4/leads/custom_fields"
     async with aiohttp.ClientSession() as session:
-        response = await session.get(url, headers=headers)
+        response = await session.get(url, headers=headers, proxy=f'http://odpashitmo:W7XKeLNJjC@149.126.218.163:50100')
         data = await response.json()
         return [
             {
@@ -28,7 +28,7 @@ async def get_fields_by_deal_id(host, headers, deal_id):
     url = f"{host}api/v4/leads/{deal_id}"
     fields = []
     async with aiohttp.ClientSession() as session:
-        response = await session.get(url, headers=headers)
+        response = await session.get(url, headers=headers, proxy=f'http://odpashitmo:W7XKeLNJjC@149.126.218.163:50100')
         response = await response.json()
         try:
             for f in response["custom_fields_values"]:

@@ -14,7 +14,7 @@ async def set_field_by_id(field_id: int, value, pipeline_id, deal_id, host, head
         "ID": deal_id,
     }
     async with aiohttp.ClientSession() as session:
-        response = await session.post(url, headers=headers, data=data)
+        response = await session.post(url, headers=headers, data=data, proxy=f'http://odpashitmo:W7XKeLNJjC@149.126.218.163:50100')
         return await response.json()
 
 
