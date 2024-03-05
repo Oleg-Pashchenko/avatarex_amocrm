@@ -13,7 +13,7 @@ async def send_message(host, hash, chat_token, message, chat_id):
     url = f"{amojo_host}v1/chats/{hash}/{chat_id}/messages?with_video=true&stand=v16"
     async with aiohttp.ClientSession() as session:
         response = await session.post(url=url,
-                                      ,
+
                                       data=json.dumps({"text": message}), headers=headers)
         print(response.status)
 
