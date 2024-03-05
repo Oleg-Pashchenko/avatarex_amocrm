@@ -43,7 +43,7 @@ async def get_unanswered_messages(host: str, headers: dict, pipeline_id: int, st
                 )
 
                 url = f"{amojo_host}messages/{amo_hash}/merge?stand=v16&offset=0&limit=20&chat_id%5B%5D={chat_id}&get_tags=true&lang=ru"
-                r = await session.get(url, , headers={"X-Auth-Token": chat_token})
+                r = await session.get(url,  headers={"X-Auth-Token": chat_token})
 
                 try:
                     messages_history = await r.json()
