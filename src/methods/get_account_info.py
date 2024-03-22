@@ -8,6 +8,7 @@ import requests
 
 def get_pipelines_info(host, headers):
     response = requests.get(f"{host}ajax/v1/pipelines/list", headers=headers).json()["response"]["pipelines"]
+    print(response.text)
     return [
         {
             'id': p["id"],
@@ -24,6 +25,7 @@ def get_pipelines_info(host, headers):
 
 def get_custom_fields(host, headers):
     response = requests.get(f"{host}api/v4/leads/custom_fields", headers=headers).json()["_embedded"]["custom_fields"]
+    print(response.text)
     return [
         {
             'id': f['id'],
