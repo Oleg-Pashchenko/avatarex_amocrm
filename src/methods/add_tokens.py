@@ -49,6 +49,8 @@ async def add_tokens_handler(request):
 
 async def create_amojo_id(host, headers):
     url = f"{host}api/v4/account?with=amojo_id"
+    print(url)
+    print(headers)
     async with aiohttp.ClientSession() as session:
         response = await session.get(url, headers=headers,
                                      )
@@ -72,6 +74,7 @@ async def create_tokens(host, access_token, refresh_token):
     headers['access_token'] = access_token
     headers['refresh_token'] = refresh_token
     headers['HOST'] = host.replace('https://', '').replace('/', '')
+    print(headers)
     return access_token, refresh_token, headers
 
 
