@@ -24,7 +24,7 @@ async def add_tokens_handler(request):
     start_time = time.time()
     try:
         data = AddTokensData(**await request.json())
-        headers = {"Authorization": f'Bearer {data.access_token}', 'X-Requested-With': 'XMLHttpRequest'}
+        headers = {"Authorization": f'Bearer {data.access_token}'}
         return web.json_response({
             'status': True, 'answer': {
                 'headers': headers,
@@ -59,6 +59,7 @@ async def create_amojo_id(host, headers):
 
 async def create_chat_token(host, headers):
     url = f"{host}ajax/v1/chats/session"
+    headers['X-Requested-With'] = 'XMLHttpRequest'
     payload = {"request[chats][session][action]": "create"}
     async with aiohttp.ClientSession() as session:
         response = await session.post(url=url, headers=headers, data=payload,
