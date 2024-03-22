@@ -24,13 +24,12 @@ async def add_tokens_handler(request):
     start_time = time.time()
     try:
         data = AddTokensData(**await request.json())
-        acc_token, refr_token, headers = await create_tokens(data.amo_host, data.access_token, data.refresh_token)
-
+        headers = {"Authorization": f'Bearer {data.access_token}'}
         return web.json_response({
             'status': True, 'answer': {
                 'headers': headers,
-                'access_token': acc_token,
-                'refresh_token': refr_token,
+                'access_token': data.access_token,
+                'refresh_token': data.refresh_token,
                 'amojo_id': await create_amojo_id(data.amo_host, headers),
                 'chat_token': await create_chat_token(data.amo_host, headers)
             },
