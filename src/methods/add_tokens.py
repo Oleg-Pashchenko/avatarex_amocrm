@@ -24,7 +24,7 @@ async def add_tokens_handler(request):
     start_time = time.time()
     try:
         data = AddTokensData(**await request.json())
-        headers = {"Authorization": f'Bearer {data.access_token}'}
+        headers = {"Authorization": f'Bearer {data.access_token}', 'X-Requested-With': 'XMLHttpRequest'}
         return web.json_response({
             'status': True, 'answer': {
                 'headers': headers,
@@ -91,4 +91,3 @@ async def _create_session(host):
                 "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36",
             }
         return cookies, csrf_token, headers
-
