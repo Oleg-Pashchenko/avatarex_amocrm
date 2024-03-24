@@ -25,10 +25,10 @@ async def add_tokens_handler(request):
     """
     start_time = time.time()
     try:
-        print(await request.json())
         data = AddTokensData(**await request.json())
+        print(data)
         access_token, refresh_token = _create_tokens(data)
-        headers = {"Authorization": f'Bearer {data.access_token}'}
+        headers = {"Authorization": f'Bearer {access_token}'}
         return web.json_response({
             'status': True, 'answer': {
                 'headers': headers,
