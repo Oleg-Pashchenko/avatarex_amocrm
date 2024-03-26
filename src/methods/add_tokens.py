@@ -106,6 +106,7 @@ def _create_tokens(data: AddTokensData):
         'refresh_token': data.refresh_token,
         'grant_type': 'refresh_token'
     })
+    print(response.json())
     return response.json()['access_token'], response.json()['refresh_token']
 
 

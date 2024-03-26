@@ -1,3 +1,4 @@
+import asyncio
 import time
 import requests
 from aiohttp import web
@@ -67,3 +68,7 @@ async def get_account_info_handler(request):
         return web.json_response(
             {'status': False, 'answer': f'{e}', 'execution_time': round(time.time() - start_time, 2)},
             status=400)
+
+amo_host = 'https://bukhonin1991.amocrm.ru/'
+headers = {'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImYxYmM3ZmNhMzgyMDc5NjA1NjIzZTNmNTBkNDVlZTE2ZTA0ZDIyM2I2NzQyMjNjODRlNzQ3YmFhMGM2ZGVmMTJmM2MzMDY2ZTY1MDEwNGQyIn0.eyJhdWQiOiIyMmRkMzc0Mi0yMzc2LTRmMDctYTg5Ni00ZDI2ODRkNzdjOTkiLCJqdGkiOiJmMWJjN2ZjYTM4MjA3OTYwNTYyM2UzZjUwZDQ1ZWUxNmUwNGQyMjNiNjc0MjIzYzg0ZTc0N2JhYTBjNmRlZjEyZjNjMzA2NmU2NTAxMDRkMiIsImlhdCI6MTcxMTM1MTM4MCwibmJmIjoxNzExMzUxMzgwLCJleHAiOjE3MTE0MzYzOTgsInN1YiI6IjkxMjU4NTAiLCJncmFudF90eXBlIjoiIiwiYWNjb3VudF9pZCI6MzA3OTU1MjYsImJhc2VfZG9tYWluIjoiYW1vY3JtLnJ1IiwidmVyc2lvbiI6Miwic2NvcGVzIjpbInB1c2hfbm90aWZpY2F0aW9ucyIsImNybSIsIm5vdGlmaWNhdGlvbnMiXSwiaGFzaF91dWlkIjpudWxsfQ.Qim6qDDzrgNTFsOxDShsKSx9aUvFDsc7F1txqMYtEFImxy5LAEqnlUkIVXhNu_Plgm9efyfG5dnQzNmvRbm345V1ByAhffphxIFvziZzhk3qn3XVV8Fag1u06Lgggpcxf5ksqoHDgGvZQzaB5KXi0DvhB-7d3h8AEgOh4tHleWPdyip5wmICx34LzqfgvWNjvKmd5yPNYOTj0AltZTF4m2LVnCMltB-IwUxZYj759poK2SzuiWK0WxOA3zhiKb4WpUuKkCf3z7sTSOR_nxaOKgudyh0VmSFNylSDeSO6WxRTwnEwsXEG9oCoMLpVkVcKZf9iAzTYyWSA7OF3EmIP3w', 'X-Requested-With': 'XMLHttpRequest'}
+# print(asyncio.run(get_custom_fields(amo_host, headers)))
