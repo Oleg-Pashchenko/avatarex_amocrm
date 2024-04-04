@@ -12,4 +12,4 @@ app.router.add_post('/fill-field/', fill_fields_handler)
 app.router.add_post('/get-account-info/', get_account_info_handler)
 app.router.add_post('/send-message/', send_message_handler)
 app.router.add_post('/get-messages/', get_messages_handler)
-
+app.router.add_post('/clear-fields/', clear_fields_handler)
