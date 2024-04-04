@@ -26,7 +26,7 @@ class ClearFieldsData(BaseModel):
     fields: list
 
 
-async def fill_fields_handler(request):
+async def clear_fields_handler(request):
     start_time = time.time()
     try:
         data = ClearFieldsData(**await request.json())
