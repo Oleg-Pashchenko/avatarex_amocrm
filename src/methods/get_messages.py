@@ -37,14 +37,11 @@ async def get_unanswered_messages(host: str, headers: dict, pipeline_id: int, st
 
         async with aiohttp.ClientSession() as session:
             talks = await session.get(url=url, headers=headers, params=params, )
-            print(talks.status)
             talks = await talks.json()
-            print(talks)
             response = []
             await asyncio.sleep(1)
 
             for t in talks["_embedded"]["talks"]:
-                print(t)
                 if 'Salesbot' in t['last_message']['author']:
                     continue
 
@@ -77,7 +74,6 @@ async def get_unanswered_messages(host: str, headers: dict, pipeline_id: int, st
                     )
                 except Exception:
                     pass  # Ignore if user deleted the message
-        print(time.time() - start)
         return response
     except Exception as e:
         print(e)
@@ -97,7 +93,6 @@ async def get_messages_handler(request):
     start_time = time.time()
     try:
         data = GetMessagesData(**await request.json())
-        print(data)
         return web.json_response(
             {
                 'status': True,

@@ -15,7 +15,6 @@ async def send_message(host, hash, chat_token, message, chat_id):
         response = await session.post(url=url,
 
                                       data=json.dumps({"text": message}), headers=headers)
-        print(response.status)
 
         return (await response.json())['id']
 
